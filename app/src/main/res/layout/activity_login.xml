@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saiyi.smartkeycabinet.config.ui.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="75dp"
+        android:text="用户登陆"
+        android:textColor="@color/white"
+        android:textSize="34dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/choose_type_bg"
+        android:paddingTop="45dp"
+        android:paddingBottom="45dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="130dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                android:textSize="24dp"
+                android:text="手  机 号:"/>
+
+            <EditText
+                android:id="@+id/phone_et"
+                android:layout_width="540dp"
+                android:layout_height="45dp"
+                android:background="@drawable/shape_et_bg"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/black"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:hint="请输入手机号"
+                android:textSize="24dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:minWidth="130dp"
+                android:textColor="@color/white"
+                android:layout_marginRight="5dp"
+                android:textSize="24dp"
+                android:text="密     码:"/>
+
+            <EditText
+                android:id="@+id/pwd_et"
+                android:layout_width="540dp"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@+id/left"
+                android:background="@drawable/shape_et_bg"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/black"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:hint="请输入密码"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/login_btn"
+                android:layout_width="540dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/pwd_et"
+                android:layout_alignLeft="@+id/pwd_et"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="完成"
+                android:background="@drawable/button"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

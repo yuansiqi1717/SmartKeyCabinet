@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--服务端异常-->
+    <string name="unknow">未知错误</string>
+    <string name="auth_code_error">验证码错误</string>
+    <string name="service_error">服务端异常</string>
+    <string name="login_faild">登录失败</string>
+    <string name="phone_or_pwd_error">账号或密码错误</string>
+    <string name="device_not_activated">设备未激活</string>
+    <string name="none_data">暂无数据</string>
+    <string name="success">操作成功</string>
+    <string name="login_timeout">认证过期,请重新登陆</string>
+</resources>

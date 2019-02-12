@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.saiyi.smartkeycabinet.keycabinet.ui.TestDeviceActivity">
+
+    <EditText
+        android:id="@+id/address_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="锁地址"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="number"
+        android:maxLength="3"/>
+
+    <TextView
+        android:id="@+id/read_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/close_key_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="关闭钥匙位(灯和锁)"/>
+
+        <Button
+            android:id="@+id/open_key_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="开启钥匙位(灯和锁)"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/open_out_door_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="打开外门"/>
+
+        <Button
+            android:id="@+id/read_key_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="读取钥匙位里钥匙信息"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/read_key_bc_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="Read Key Boradcast"/>
+
+        <Button
+            android:id="@+id/read_key_con_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="Read Key Cmd"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/take_away_key_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="取钥匙"/>
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="40dp"
+            android:layout_weight="1"
+            android:text="还钥匙"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bind_key_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="40dp"
+            android:layout_weight="1"
+            android:text="绑定钥匙"/>
+
+        <Button
+            android:id="@+id/unbind_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:visibility="gone"
+            android:text="UnBind Key"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:visibility="visible"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/send_test_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="40dp"
+            android:text="Multiple Device Send Test"/>
+
+        <Button
+            android:id="@+id/connect_test_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="40dp"
+            android:layout_weight="1"
+            android:text="Connection Test"/>
+    </LinearLayout>
+</LinearLayout>

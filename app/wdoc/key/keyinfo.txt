@@ -1,0 +1,13 @@
+keyname:smart_key_cabinet
+keyPassword:123456
+
+alias:release
+aliasPassword:123456
+validity(years):25
+
+Name:smart key cabinet
+Organizational Unit:saiyi
+Organization:saiyi
+City:shenzhen
+Province:guangzhou
+Country:china

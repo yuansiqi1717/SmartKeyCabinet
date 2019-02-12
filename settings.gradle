@@ -1,0 +1,1 @@
+include ':app', ':lib.serialport', ':lib.fast', ':lib.rfidm_df02', ':lib.fingerprint_bybc05', ':lib.keyposition', ':lib.lockplate', ':lib.bugly'

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.saiyi.smartkeycabinet.keycabinet.ui.widget.CheckRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/box_rl"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_normal_box_bg">
+        <TextView
+            android:id="@+id/box_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"/>
+
+        <TextView
+            android:id="@+id/box_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_centerInParent="true"/>
+
+        <CheckBox
+            android:id="@+id/status_cb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:enabled="false"
+            android:button="@null"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/selector_box_select_cb"/>
+    </com.saiyi.smartkeycabinet.keycabinet.ui.widget.CheckRelativeLayout>
+
+</LinearLayout>

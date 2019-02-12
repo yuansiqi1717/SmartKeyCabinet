@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="50dp"
+    tools:context="com.saiyi.smartkeycabinet.keycabinet.ui.ManagerKeyPositionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:layout_marginTop="6dp"
+        android:text="管理钥匙位"
+        android:textColor="@color/white"
+        android:textSize="34dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/key_position_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/right" />
+
+        <RelativeLayout
+            android:id="@+id/right"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bind_status_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/unbind_btn"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_above="@+id/bind_btn"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/selector_bind_btn"
+                android:clickable="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="解除车辆"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/bind_btn"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="11dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/selector_bind_btn"
+                android:clickable="true"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="绑定车辆"
+                android:textColor="@color/black"
+                android:textSize="26dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

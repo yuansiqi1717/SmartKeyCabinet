@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saiyi.smartkeycabinet">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".core.app.KeyCabinetApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".config.ui.SpalishActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/SpalishTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".config.ui.LoginActivity" />
+
+        <activity android:name=".auth.ui.ChooseAuthTypeActivity" />
+
+        <activity
+            android:name=".auth.ui.CardAuthActivity"
+            android:theme="@style/TranslucentTheme" />
+
+        <activity
+            android:name=".auth.ui.FingerprintAuthActivity"
+            android:theme="@style/TranslucentTheme" />
+
+        <activity
+            android:name=".auth.ui.FaceAuthActivity"
+            android:theme="@style/TranslucentTheme" />
+
+        <activity
+            android:name=".keycabinet.ui.ChooseSaveOrTakeActivity"
+            android:launchMode="singleTop" />
+
+        <activity android:name=".auth.ui.CodeAuthActivity" />
+
+        <activity android:name=".keycabinet.ui.TakeAwayKeyActivity" />
+
+        <activity android:name=".config.ui.ManagerUserActivity" />
+
+        <activity android:name=".config.ui.EnterAuthActivity" />
+
+        <activity android:name=".keycabinet.ui.ManagerKeyPositionActivity" />
+
+        <activity android:name=".keycabinet.ui.TestDeviceActivity" />
+
+        <activity
+            android:name=".keycabinet.ui.SaveKeyActivity"
+            android:theme="@style/TranslucentTheme" />
+
+        <activity
+            android:name=".config.ui.DeviceCodeActivity"
+            android:theme="@style/TranslucentTheme" />
+
+        <!-- 开机自启动 -->
+        <receiver android:name=".core.autorun.SlptServiceInstalledReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

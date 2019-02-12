@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.saiyi.smartkeycabinet.auth.ui.CodeAuthActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="34dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="23dp"
+        android:text="验证码取钥匙"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/code_et"
+            android:textSize="20dp"
+            android:text="验证码:"/>
+
+        <EditText
+            android:id="@+id/code_et"
+            android:layout_width="495dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="33dp"
+            android:layout_centerHorizontal="true"
+            android:maxLength="@integer/code_length"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:inputType="number"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_hint_color"
+            android:background="@drawable/shape_et_bg"
+            android:textSize="20dp"
+            android:focusable="false"
+            android:hint="请输入验证码"/>
+
+        <com.saiyi.smartkeycabinet.auth.ui.widget.CodeInputView
+            android:id="@+id/code_input_view"
+            android:layout_width="495dp"
+            android:layout_height="430dp"
+            android:layout_alignLeft="@+id/code_et"
+            android:layout_below="@+id/code_et"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

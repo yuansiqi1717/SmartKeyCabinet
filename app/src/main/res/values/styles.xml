@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:screenOrientation">landscape</item>
+        <item name="android:windowFullscreen">true</item>
+        <!--<item name="android:foreground">?android:attr/selectableItemBackground</item>-->
+        <item name="android:windowBackground">@drawable/layerlist_activity_bg</item>
+    </style>
+
+    <style name="SpalishTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/layerlist_spalish_activity_bg</item>
+    </style>
+
+    <style name="TranslucentTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/translucent_background</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+</resources>

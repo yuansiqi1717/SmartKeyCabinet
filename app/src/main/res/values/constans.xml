@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--View中用到的一些常量的引用-->
+
+    <!--开钥匙柜的验证码的长度-->
+    <integer name="code_length">4</integer>
+</resources>
